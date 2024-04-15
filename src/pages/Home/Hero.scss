@@ -1,0 +1,86 @@
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+.hero__container {
+  background-color: #f9f9f9;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 900px) {
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    &__hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 110px;
+      margin-top: 80px;
+      @media (max-width: 900px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        text-align: center;
+      }
+      &__role {
+        max-width: 510px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      h1 {
+        color: #2d2e32;
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+        @media (max-width: 500px) {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+  .hero__links {
+    display: flex;
+    gap: 5px;
+    margin-top: 25px;
+    width: 100%;
+    @media (max-width: 900px) {
+      justify-content: center;
+    }
+  }
+
+  .hero__backgoundImage {
+    animation: morph 8s ease-in-out infinite;
+    background-image: url(https://images.thedirect.com/media/article_full/rick1.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 22rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 22rem;
+    @media (max-width: 500px) {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+}

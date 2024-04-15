@@ -1,0 +1,89 @@
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.about {
+  padding: 50px 0;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+    & .laptop-back {
+      border-radius: 17px;
+      max-width: 400px;
+      @media (max-width: 430px) {
+        max-width: 350px;
+      }
+    }
+
+    &__text {
+      max-width: 500px;
+      &--about {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #147efb;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        @media (max-width: 1000px) {
+          text-align: center;
+        }
+      }
+      &--title {
+        font-size: 1.5rem;
+        color: #2d2d2d;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        @media (max-width: 1000px) {
+          text-align: center;
+        }
+      }
+      &--description {
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+  }
+  .work-emoji {
+    bottom: 11px;
+    position: absolute;
+    right: 26px;
+    width: 4rem;
+    z-index: 10;
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+  .rotate-animation-front {
+    @media (max-width: 1000px) {
+      display: none;
+    }
+    position: absolute;
+
+    bottom: 125px;
+    right: 144px;
+    & img {
+      -webkit-animation: rotate 9s linear infinite;
+      animation: rotate 9s linear infinite;
+      width: 11rem;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+}
