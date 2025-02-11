@@ -22,7 +22,7 @@ export default function Projects() {
       name: "Chamberidin",
       description: `
       ChamberedIn is a SaaS platform revolutionizing Commerce Chamber management. It offers seamless event management, centralized communication, elevated member engagement, and expanded reach for chambers of commerce. The platform features cloud-based flexibility, mobile-responsive design, user-centric interface, and top-tier security.`,
-      link: "https://chamberedin.com/",
+      link: "https://app.chamberedin.com/",
       technologies: ["React Native", "TypeScript", "Tailwind"],
       image: chamber,
       index: 2,
