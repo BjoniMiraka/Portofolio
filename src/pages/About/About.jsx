@@ -21,11 +21,12 @@ const About = () => {
           <h1 className="about__content__text--about">About Me</h1>
           <h1 className="about__content__text--title">Front-End Developer</h1>
           <p className="about__content__text--description">
-            Junior front-end developer passionate about crafting smooth user
-            experiences and clean code. Skilled in HTML, CSS, React, Tailwind
-            CSS, React Native, and SCSS, with 8 months of internship and project
-            experience. Thrives in team environments, eager to learn, share
-            ideas, and build exceptional solutions together.
+            Passionate about building seamless user experiences and writing
+            clean, efficient code. Proficient in HTML, CSS, SCSS, React, React
+            Native, and Tailwind CSS, with over a year of hands-on experience
+            and successful project contributions. Thrive in collaborative
+            environments, eager to learn, share ideas, and deliver outstanding
+            solutions as part of a dynamic team.
           </p>
         </div>
       </div>
